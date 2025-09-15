@@ -1,0 +1,50 @@
+{
+  "study_information": {
+    "title": "Western Ghats Land Use Land Cover Analysis using Dynamic World",
+    "study_area": "Western Ghats Biodiversity Hotspot, India",
+    "total_area_km2": 107480.92086357303,
+    "analysis_period": "2018-2024",
+    "temporal_resolution": "2-year intervals (January dry season)",
+    "spatial_resolution": "10m (Dynamic World)",
+    "data_source": "Google Earth Engine Dynamic World V1",
+    "analysis_date": "2025-09-15 19:34:06",
+    "coordinate_system": "EPSG:4326 (WGS84)",
+    "methodology": "Refined approach using probability bands with quality filtering"
+  },
+  "key_findings": {
+    "buildup_expansion": {
+      "initial_area_km2": 2358.5477968974956,
+      "final_area_km2": 3739.4476225204353,
+      "absolute_growth_km2": 1380.8998256229397,
+      "percentage_growth": 58.548731869645245,
+      "average_annual_growth_rate": 16.641210648654848,
+      "current_buildup_density_percent": 3.5050014320889624
+    },
+    "forest_conservation": {
+      "initial_forest_percent": 76.00323022378318,
+      "final_forest_percent": 77.64516540951624,
+      "forest_change_percentage_points": 1.641935185733061,
+      "average_forest_coverage": 77.33944475388222,
+      "forest_conservation_status": "Excellent - maintained above 75%"
+    },
+    "data_quality": {
+      "snow_ice_detection_km2": 0.0,
+      "quality_assessment": "Excellent - no impossible land cover classes detected",
+      "methodology_validation": "Refined approach eliminated previous data quality issues"
+    }
+  },
+  "lulc_composition_2024": {
+    "trees_percent": 77.64516540951624,
+    "built_percent": 3.5050014320889624,
+    "crops_percent": 3.801920946969914,
+    "grass_percent": 0.8391268572951739,
+    "shrub_scrub_percent": 10.178211063595612,
+    "water_percent": 3.8327803931734463
+  },
+  "methodology_improvements": {
+    "previous_issues": "Impossible snow/ice detection, unrealistic growth rates",
+    "refined_approach": "Probability bands with quality filtering and geographic constraints",
+    "validation_method": "Test area validation before full analysis",
+    "quality_controls": "Eliminated impossible classes, realistic growth patterns"
+  }
+}
