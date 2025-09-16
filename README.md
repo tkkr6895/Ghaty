@@ -2,10 +2,12 @@
 
 Analysis of land use and land cover changes in the Western Ghats biodiversity hotspot using satellite data from Google Earth Engine's Dynamic World dataset.
 
+## **⚠️ Important Classification Note**
+**Dynamic World "Trees" class includes natural forests AND large-scale plantations.** This analysis reports "tree cover" which may include commercial/agricultural plantations and should not be interpreted as natural forest cover per Forest Survey of India definitions. Cross-validation with FSI data recommended for forest-specific analysis.
 
 ## TODOs
-- Map Y-o-Y representation of built up area and barren land
-- Google Earth & QGIS layer export files for validation
+✅ Map Y-o-Y representation of built up area and barren land  
+✅ Google Earth & QGIS layer export files for validation  
 - Writeup & Publish
 
 ## Study Area
@@ -35,11 +37,12 @@ This analysis uses data from multiple sources:
 - Total growth: 58.5% over 6 years
 - Average annual growth: 9.8%
 
-### Forest Conservation
-- 2018 forest coverage: 76.0%
-- 2024 forest coverage: 77.6%
+### Tree Cover Status (⚠️ Includes Plantations)
+- 2018 tree cover: 76.0%
+- 2024 tree cover: 77.6%
 - Net change: +1.6 percentage points
-- Status: Forest cover maintained above 75%
+- Status: Tree cover maintained above 75%
+- **Note**: Values include both natural forests and large-scale plantations per Dynamic World classification
 
 ## Methodology
 
@@ -63,6 +66,31 @@ The analysis employs a refined approach using Dynamic World probability bands wi
 1. Set up Google Earth Engine authentication
 2. Install required Python packages: `earthengine-api`, `geopandas`, `matplotlib`, `plotly`
 3. Run the Jupyter notebook `western_ghats_analysis_clean.ipynb`
+
+## Outputs and Data Products
+
+### Statistical Analysis
+- `outputs/western_ghats_lulc_results.csv` - Area calculations and trends
+- `outputs/lulc_analysis_charts.png` - Visualization summaries
+
+### Spatial Data Exports (NEW!)
+**Google Drive Folders:**
+- `Western_Ghats_LULC_Export/` - GeoTIFF files for GIS analysis
+  - Built-up area masks by year (2018, 2020, 2022, 2024)
+  - Barren land masks by year
+  - Probability layers for uncertainty assessment
+  - Full classification layers
+
+### Map Visualizations (NEW!)
+- `Western_Ghats_Maps/` - Year-on-year change maps
+  - RGB change highlights (Red=Built, Green=Barren, Blue=Trees)
+  - Full classification maps with Dynamic World colors
+  - Ready for import into QGIS/ArcGIS/Web GIS
+
+### Usage Instructions
+1. **For QGIS/ArcGIS**: Import GeoTIFF files for spatial analysis and cartographic production
+2. **For Google Earth Engine**: Use exported data for further cloud-based processing
+3. **For Web Applications**: Map files suitable for online visualization platforms
 
 ## Technical Requirements
 
