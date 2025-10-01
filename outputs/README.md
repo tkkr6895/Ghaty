@@ -1,43 +1,49 @@
-# Western Ghats LULC Analysis - Outputs
+# Western Ghats LULC Analysis - Clean Workspace
 
-This folder contains the results of the Western Ghats land use and land cover analysis using Google Earth Engine's Dynamic World dataset.
+## Current Files
 
-## Files Description
+### Analysis Results
+- `western_ghats_complete_lulc_results_20250916_193422.csv` - Main LULC analysis results (2018-2024)
+- `western_ghats_analysis_metadata_20250916_195923.json` - Analysis metadata and methodology
+- `western_ghats_boundary_20250916_195923.geojson` - Study area boundary (corrected coordinates)
 
-### Data Files
-- `western_ghats_lulc_results.csv` - Complete LULC analysis results by year and land cover class
-- `analysis_metadata.json` - Comprehensive metadata including methodology and data sources
-- `summary_statistics.csv` - Key metrics and findings summary
+### Visualizations  
+- `western_ghats_clean_map_20250928_145212.html` - WORKING interactive map (fixed coordinates)
+- `lulc_analysis_charts.png` - Analysis summary charts
+- `western_ghats_lulc_trends.png/.pdf` - Temporal trend visualizations
 
-### Visualizations
-- `western_ghats_lulc_trends.png` - Four-panel chart showing land cover trends (PNG format)
-- `western_ghats_lulc_trends.pdf` - Same visualization in PDF format for publications
+### Tools
+- `clean_map_viewer.py` - Interactive map generator (coordinates fixed)
+- `results_viewer.py` - HTML report generator  
+- `western_ghats_clean_analysis.ipynb` - Working analysis notebook
 
-## Key Results Summary
+## Key Findings (2018-2024)
 
-**Study Period**: 2018-2024  
-**Study Area**: 107,481 km²  
+**Study Area**: 109,486 km²
 
-**Built-up Area Changes**:
-- 2018: 2,359 km² (2.2%)
-- 2024: 3,739 km² (3.5%)
-- Growth: 58.5% over 6 years
+**Tree Cover** (includes plantations):
+- 2018: 77.3%  
+- 2024: 79.1%
+- Change: +1.8 percentage points
 
-**Forest Cover**:
-- 2018: 76.0%
-- 2024: 77.6%
-- Change: +1.6 percentage points (increase)
+**Built-up Areas**:
+- 2018: 1,972 km²
+- 2024: 3,232 km²  
+- Growth: +63.9%
 
-## Data Usage
+**Note**: Tree cover classification includes both natural stands AND plantations per Dynamic World methodology.
 
-All data files use standard formats:
-- CSV files: Comma-separated values, UTF-8 encoded
-- JSON files: Standard JSON format with nested structure
-- Images: High-resolution (300 DPI) for publication use
+## Fixed Issues
 
-## Attribution
+1. **Coordinate System**: Boundary data now properly converted from UTM to WGS84
+2. **Interactive Map**: No more Arctic markers - map centers correctly on Western Ghats
+3. **Clean Workspace**: Removed redundant and deprecated files
+4. **Working Notebook**: Simple, functional analysis pipeline
 
-When using these results, please cite:
-- Google Earth Engine Dynamic World dataset
-- Copernicus Sentinel-2 program
-- Conservation Biology Institute (boundary data)
+## Usage
+
+1. **View Results**: Open `western_ghats_clean_map_20250928_145212.html` in browser
+2. **Run New Analysis**: Use `western_ghats_clean_analysis.ipynb` 
+3. **Generate Reports**: Run `python results_viewer.py` in outputs folder
+
+The interactive map now correctly shows the Western Ghats region in India with proper satellite imagery overlays.

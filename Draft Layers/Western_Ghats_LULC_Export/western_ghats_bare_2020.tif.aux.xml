@@ -1,0 +1,35 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <Description>class_mask</Description>
+    <Metadata>
+      <MDI key="STATISTICS_MINIMUM">0</MDI>
+      <MDI key="STATISTICS_MAXIMUM">255</MDI>
+      <MDI key="STATISTICS_MEAN">0.00452845467816</MDI>
+      <MDI key="STATISTICS_STDDEV">1.0745861696621</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">70.56</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Description>full_classification</Description>
+    <Metadata>
+      <MDI key="STATISTICS_MINIMUM">0</MDI>
+      <MDI key="STATISTICS_MAXIMUM">7</MDI>
+      <MDI key="STATISTICS_MEAN">1.2700273127973</MDI>
+      <MDI key="STATISTICS_STDDEV">1.0846175948021</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">70.56</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Description>built_probability</Description>
+    <Metadata>
+      <MDI key="STATISTICS_MINIMUM">2</MDI>
+      <MDI key="STATISTICS_MAXIMUM">76</MDI>
+      <MDI key="STATISTICS_MEAN">5.2895014437779</MDI>
+      <MDI key="STATISTICS_STDDEV">8.7177605553599</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">70.56</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="4">
+    <Description>bare_probability</Description>
+  </PAMRasterBand>
+</PAMDataset>
