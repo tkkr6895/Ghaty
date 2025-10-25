@@ -231,8 +231,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🌿 Western Ghats Land Use Land Cover Analysis 🌿</h1>
-            <div class="subtitle">Comprehensive LULC Analysis Dashboard (1987-2023)</div>
+            <h1>Western Ghats Land Use Land Cover Analysis</h1>
+            <div class="subtitle">LULC Analysis Dashboard (1987-2023)</div>
         </div>
         
         <div class="stats-summary">
@@ -262,15 +262,15 @@
                 <div class="stat-label">km² (+1359%)</div>
             </div>
             <div class="stat-card">
-                <div class="stat-label">Data Quality</div>
-                <div class="stat-value">✓</div>
-                <div class="stat-label">Verified</div>
+                <div class="stat-label">Data Status</div>
+                <div class="stat-value">Verified</div>
+                <div class="stat-label">From Satellite Observations</div>
             </div>
         </div>
         
         <div class="controls">
             <div class="control-group">
-                <label for="year-select">📅 Select Year to View Detailed Statistics:</label>
+                <label for="year-select">Select Year to View Detailed Statistics:</label>
                 <select id="year-select" onchange="updateYearDetails()">
                     <option value="0">1987 - GLC-FCS30D</option><option value="1">1992 - GLC-FCS30D</option><option value="2">1997 - GLC-FCS30D</option><option value="3">2000 - GLC-FCS30D</option><option value="4">2005 - GLC-FCS30D</option><option value="5">2010 - GLC-FCS30D</option><option value="6">2015 - GLC-FCS30D</option><option value="7">2018 - Dynamic World</option><option value="8">2019 - Dynamic World</option><option value="9">2020 - GLC-FCS30D</option><option value="10">2021 - Dynamic World</option><option value="11">2022 - Dynamic World</option><option value="12">2023 - Dynamic World</option>
                 </select>
@@ -283,28 +283,28 @@
             </div>
             
             <div class="chart-container">
-                <h3>📊 Land Cover Trends Over Time</h3>
+                <h3>Land Cover Trends Over Time</h3>
                 <canvas id="trendsChart" height="100"></canvas>
             </div>
             
             <div class="chart-container">
-                <h3>🏙️ Built Area Expansion</h3>
+                <h3>Built Area Expansion</h3>
                 <canvas id="builtChart" height="100"></canvas>
             </div>
             
             <div class="chart-container">
-                <h3> Tree Cover Trends</h3>
+                <h3>Tree Cover Trends</h3>
                 <canvas id="forestChart" height="100"></canvas>
             </div>
             
             <div class="data-source">
                 <strong>Data Sources:</strong><br>
-                • <strong>GLC-FCS30D</strong> (1987-2020): Global Land Cover at 30m resolution, 
+                GLC-FCS30D (1987-2020): Global Land Cover at 30m resolution, 
                   <a href="https://samapriya.github.io/awesome-gee-community-datasets/projects/glc30/" target="_blank">More info</a><br>
-                • <strong>Dynamic World</strong> (2018-2023): Near real-time 10m resolution land cover, 
+                Dynamic World (2018-2023): Near real-time 10m resolution land cover, 
                   <a href="https://dynamicworld.app/" target="_blank">More info</a><br>
-                • All data processed via <strong>Google Earth Engine</strong><br>
-                • Study area: Western Ghats Priority Conservation Area (CEPF Boundary)
+                All data processed via Google Earth Engine<br>
+                Study area: Western Ghats Priority Conservation Area (CEPF Boundary)
             </div>
             
             <div class="legend">
@@ -314,8 +314,8 @@
         </div>
         
         <div class="footer">
-            Generated on October 25, 2025 at 16:04:37<br>
-            Western Ghats LULC Analysis • Data Verified • All values from actual satellite observations
+            Generated on October 25, 2025 at 18:16:15<br>
+            Western Ghats LULC Analysis - Data from GLC-FCS30D and Dynamic World satellite observations
         </div>
     </div>
     
@@ -552,7 +552,7 @@
             }
         });
         
-        // Forest Chart
+        // Tree Chart
         new Chart(document.getElementById('forestChart'), {
             type: 'line',
             data: {

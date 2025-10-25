@@ -1,0 +1,539 @@
+{
+  "generation_date": "2025-10-25 17:45:22",
+  "study_area": "Western Ghats Priority Conservation Area",
+  "boundary_file": "outputs\\western_ghats_boundary_20250928_203521.geojson",
+  "years_processed": [
+    1987,
+    1992,
+    1997,
+    2000,
+    2005,
+    2010,
+    2015,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "datasets_used": [
+    "GLC-FCS30D",
+    "Dynamic World"
+  ],
+  "raster_exports": {
+    "count": 13,
+    "format": "GeoTIFF",
+    "resolution": "30m",
+    "crs": "EPSG:4326",
+    "destination": "Google Drive/Western_Ghats_LULC",
+    "tasks": [
+      {
+        "year": 1987,
+        "dataset": "GLC-FCS30D",
+        "task_id": "MF52NJ7JNOKBMKTPWIPMSUOK",
+        "description": "LULC_1987_GLC_FCS30D"
+      },
+      {
+        "year": 1992,
+        "dataset": "GLC-FCS30D",
+        "task_id": "TG75KEXN642UTRTODIU53YZV",
+        "description": "LULC_1992_GLC_FCS30D"
+      },
+      {
+        "year": 1997,
+        "dataset": "GLC-FCS30D",
+        "task_id": "SVVIM4FTK7IF5AQF5HJT5LV2",
+        "description": "LULC_1997_GLC_FCS30D"
+      },
+      {
+        "year": 2000,
+        "dataset": "GLC-FCS30D",
+        "task_id": "CYG5VS6FZRW3MOSIPWPJFGZI",
+        "description": "LULC_2000_GLC_FCS30D"
+      },
+      {
+        "year": 2005,
+        "dataset": "GLC-FCS30D",
+        "task_id": "22L7X5OLFGTK4MOU77AXZOMA",
+        "description": "LULC_2005_GLC_FCS30D"
+      },
+      {
+        "year": 2010,
+        "dataset": "GLC-FCS30D",
+        "task_id": "XDN6G5MCJ5ZBZ3ATM3O4IA5P",
+        "description": "LULC_2010_GLC_FCS30D"
+      },
+      {
+        "year": 2015,
+        "dataset": "GLC-FCS30D",
+        "task_id": "LBPFYP6KA3ZA4SOASVZPLMDQ",
+        "description": "LULC_2015_GLC_FCS30D"
+      },
+      {
+        "year": 2018,
+        "dataset": "Dynamic World",
+        "task_id": "CDVG5H2LEAV5YHFK7MSQ3OPV",
+        "description": "LULC_2018_Dynamic_World"
+      },
+      {
+        "year": 2019,
+        "dataset": "Dynamic World",
+        "task_id": "5VBJJKCY37QMRMGV5VFZ6HCJ",
+        "description": "LULC_2019_Dynamic_World"
+      },
+      {
+        "year": 2020,
+        "dataset": "GLC-FCS30D",
+        "task_id": "GLBROUNITGOSUXEHCLB76YEW",
+        "description": "LULC_2020_GLC_FCS30D"
+      },
+      {
+        "year": 2021,
+        "dataset": "Dynamic World",
+        "task_id": "VRXVTUI6DV2TA2YTIGKTGYLP",
+        "description": "LULC_2021_Dynamic_World"
+      },
+      {
+        "year": 2022,
+        "dataset": "Dynamic World",
+        "task_id": "ARS5SYAF36NIZYVPC2I5GMAC",
+        "description": "LULC_2022_Dynamic_World"
+      },
+      {
+        "year": 2023,
+        "dataset": "Dynamic World",
+        "task_id": "M27CPR7AAND3C4V24UA64KRY",
+        "description": "LULC_2023_Dynamic_World"
+      }
+    ]
+  },
+  "vector_exports": {
+    "count": 52,
+    "format": "Shapefile",
+    "classes_exported": [
+      "water",
+      "trees",
+      "crops",
+      "built"
+    ],
+    "scale": "100m",
+    "destination": "Google Drive/Western_Ghats_LULC_Vectors",
+    "tasks": [
+      {
+        "year": 1987,
+        "dataset": "GLC-FCS30D",
+        "class": "water",
+        "class_id": 0,
+        "task_id": "X6D3KDRIVAIKXILCYTBLPI5R"
+      },
+      {
+        "year": 1987,
+        "dataset": "GLC-FCS30D",
+        "class": "trees",
+        "class_id": 1,
+        "task_id": "LFQSN7RSAHEGD5J2KZBDE4AS"
+      },
+      {
+        "year": 1987,
+        "dataset": "GLC-FCS30D",
+        "class": "crops",
+        "class_id": 4,
+        "task_id": "RSBFOZL2QXP2MT5E5BZJWIPC"
+      },
+      {
+        "year": 1987,
+        "dataset": "GLC-FCS30D",
+        "class": "built",
+        "class_id": 6,
+        "task_id": "PAWUHDXX4FVI3PIM6JDZBB6Q"
+      },
+      {
+        "year": 1992,
+        "dataset": "GLC-FCS30D",
+        "class": "water",
+        "class_id": 0,
+        "task_id": "RCXE3NFA63DLQYXHKE7CVYD7"
+      },
+      {
+        "year": 1992,
+        "dataset": "GLC-FCS30D",
+        "class": "trees",
+        "class_id": 1,
+        "task_id": "2JFPAK6ZUUJV3DQLO7UQ56KH"
+      },
+      {
+        "year": 1992,
+        "dataset": "GLC-FCS30D",
+        "class": "crops",
+        "class_id": 4,
+        "task_id": "GVAQZ5IONTYP3N6TVUDHW4DC"
+      },
+      {
+        "year": 1992,
+        "dataset": "GLC-FCS30D",
+        "class": "built",
+        "class_id": 6,
+        "task_id": "DUHANLXPWIQNJ7ZDHGTCXA7F"
+      },
+      {
+        "year": 1997,
+        "dataset": "GLC-FCS30D",
+        "class": "water",
+        "class_id": 0,
+        "task_id": "MGH4M6Q24YQJUU7JKRCNWWPW"
+      },
+      {
+        "year": 1997,
+        "dataset": "GLC-FCS30D",
+        "class": "trees",
+        "class_id": 1,
+        "task_id": "BUXDTASOXMI4MINYOBPKD7Y7"
+      },
+      {
+        "year": 1997,
+        "dataset": "GLC-FCS30D",
+        "class": "crops",
+        "class_id": 4,
+        "task_id": "WVQDGNZ463OY6JM6ZTOH5QM3"
+      },
+      {
+        "year": 1997,
+        "dataset": "GLC-FCS30D",
+        "class": "built",
+        "class_id": 6,
+        "task_id": "6JZJDKZA5UZCPQPGJBRXSJ3E"
+      },
+      {
+        "year": 2000,
+        "dataset": "GLC-FCS30D",
+        "class": "water",
+        "class_id": 0,
+        "task_id": "3HA5OVYCB3ROLSCVDVAPRIHX"
+      },
+      {
+        "year": 2000,
+        "dataset": "GLC-FCS30D",
+        "class": "trees",
+        "class_id": 1,
+        "task_id": "RTLUBUDZZSSG47ZQAU3AEXFK"
+      },
+      {
+        "year": 2000,
+        "dataset": "GLC-FCS30D",
+        "class": "crops",
+        "class_id": 4,
+        "task_id": "U3SU3ERJG4YZIZI2OUM673AF"
+      },
+      {
+        "year": 2000,
+        "dataset": "GLC-FCS30D",
+        "class": "built",
+        "class_id": 6,
+        "task_id": "FIWGTXEYDB74A2YCTLY2KPBW"
+      },
+      {
+        "year": 2005,
+        "dataset": "GLC-FCS30D",
+        "class": "water",
+        "class_id": 0,
+        "task_id": "IVQZ7DFW4ZYQ432LZCJ22LNS"
+      },
+      {
+        "year": 2005,
+        "dataset": "GLC-FCS30D",
+        "class": "trees",
+        "class_id": 1,
+        "task_id": "VBGIZERJHE6P3GGEPIIHN4GA"
+      },
+      {
+        "year": 2005,
+        "dataset": "GLC-FCS30D",
+        "class": "crops",
+        "class_id": 4,
+        "task_id": "C7HJBX6PD6YCQM7CXPJXLEBT"
+      },
+      {
+        "year": 2005,
+        "dataset": "GLC-FCS30D",
+        "class": "built",
+        "class_id": 6,
+        "task_id": "ALBCCPDQRPUPHTLCQYYN2P4W"
+      },
+      {
+        "year": 2010,
+        "dataset": "GLC-FCS30D",
+        "class": "water",
+        "class_id": 0,
+        "task_id": "NFEMQL4272NRKXAWYRXJEV3E"
+      },
+      {
+        "year": 2010,
+        "dataset": "GLC-FCS30D",
+        "class": "trees",
+        "class_id": 1,
+        "task_id": "JH6WDXUSNMK5PZHTXWVCLY3R"
+      },
+      {
+        "year": 2010,
+        "dataset": "GLC-FCS30D",
+        "class": "crops",
+        "class_id": 4,
+        "task_id": "GEPYIIG4VTYWRZ2YY3OFE27W"
+      },
+      {
+        "year": 2010,
+        "dataset": "GLC-FCS30D",
+        "class": "built",
+        "class_id": 6,
+        "task_id": "HSPCJ7EB7Y4V3QVGWP7MKGPM"
+      },
+      {
+        "year": 2015,
+        "dataset": "GLC-FCS30D",
+        "class": "water",
+        "class_id": 0,
+        "task_id": "ISCIE7OLE5ZGUJMMSLNRFAG3"
+      },
+      {
+        "year": 2015,
+        "dataset": "GLC-FCS30D",
+        "class": "trees",
+        "class_id": 1,
+        "task_id": "NH75TYJMMCYFFZ35UCIFLJUF"
+      },
+      {
+        "year": 2015,
+        "dataset": "GLC-FCS30D",
+        "class": "crops",
+        "class_id": 4,
+        "task_id": "ZIA6LFOISIN7KAR3KBDL6O2P"
+      },
+      {
+        "year": 2015,
+        "dataset": "GLC-FCS30D",
+        "class": "built",
+        "class_id": 6,
+        "task_id": "O3FYU446RDP6RZMQL7PQ4IFZ"
+      },
+      {
+        "year": 2018,
+        "dataset": "Dynamic World",
+        "class": "water",
+        "class_id": 0,
+        "task_id": "2NPPYL7KVVSPFLCZGV266355"
+      },
+      {
+        "year": 2018,
+        "dataset": "Dynamic World",
+        "class": "trees",
+        "class_id": 1,
+        "task_id": "4BL7BXO35GSXAIXVE6JP4UB4"
+      },
+      {
+        "year": 2018,
+        "dataset": "Dynamic World",
+        "class": "crops",
+        "class_id": 4,
+        "task_id": "SSH44S43TH6SCWBUF4LMXX5Q"
+      },
+      {
+        "year": 2018,
+        "dataset": "Dynamic World",
+        "class": "built",
+        "class_id": 6,
+        "task_id": "PLDUUR2XAMAXY7C5CXNEZVHD"
+      },
+      {
+        "year": 2019,
+        "dataset": "Dynamic World",
+        "class": "water",
+        "class_id": 0,
+        "task_id": "JWOHT2D2M4FSTAIV3DVLG42B"
+      },
+      {
+        "year": 2019,
+        "dataset": "Dynamic World",
+        "class": "trees",
+        "class_id": 1,
+        "task_id": "Q5AFQ6CYW5I6MBJKRW33JNWG"
+      },
+      {
+        "year": 2019,
+        "dataset": "Dynamic World",
+        "class": "crops",
+        "class_id": 4,
+        "task_id": "2J4HDOAF6FBFTEIKYHSAHQW3"
+      },
+      {
+        "year": 2019,
+        "dataset": "Dynamic World",
+        "class": "built",
+        "class_id": 6,
+        "task_id": "C6UD6XS2MAS2ZVCF4EABG66D"
+      },
+      {
+        "year": 2020,
+        "dataset": "GLC-FCS30D",
+        "class": "water",
+        "class_id": 0,
+        "task_id": "YPKA6DJMKPV6TC7J6ZJR4I52"
+      },
+      {
+        "year": 2020,
+        "dataset": "GLC-FCS30D",
+        "class": "trees",
+        "class_id": 1,
+        "task_id": "PS6Z673NBNW57FTEQWMO4N2B"
+      },
+      {
+        "year": 2020,
+        "dataset": "GLC-FCS30D",
+        "class": "crops",
+        "class_id": 4,
+        "task_id": "BCO43N47DRZW5Z623JV73VJC"
+      },
+      {
+        "year": 2020,
+        "dataset": "GLC-FCS30D",
+        "class": "built",
+        "class_id": 6,
+        "task_id": "5GCJGZBD6DWKWELLNUN6MG7K"
+      },
+      {
+        "year": 2021,
+        "dataset": "Dynamic World",
+        "class": "water",
+        "class_id": 0,
+        "task_id": "HCVWCXBCLNWT3RPQY4DPNMHW"
+      },
+      {
+        "year": 2021,
+        "dataset": "Dynamic World",
+        "class": "trees",
+        "class_id": 1,
+        "task_id": "ZKPRIFOWYIZJ5ZXWSN2JUDBJ"
+      },
+      {
+        "year": 2021,
+        "dataset": "Dynamic World",
+        "class": "crops",
+        "class_id": 4,
+        "task_id": "PF6FOOFDDE6V6XCHBUGJEO7Q"
+      },
+      {
+        "year": 2021,
+        "dataset": "Dynamic World",
+        "class": "built",
+        "class_id": 6,
+        "task_id": "SOZYAWNKQV6ER6ULY7R6S4GZ"
+      },
+      {
+        "year": 2022,
+        "dataset": "Dynamic World",
+        "class": "water",
+        "class_id": 0,
+        "task_id": "G7TGFEXDAU4JBBVUZVQ75KBJ"
+      },
+      {
+        "year": 2022,
+        "dataset": "Dynamic World",
+        "class": "trees",
+        "class_id": 1,
+        "task_id": "NWFDMHIWZW5ZWBRCM7MDNOXM"
+      },
+      {
+        "year": 2022,
+        "dataset": "Dynamic World",
+        "class": "crops",
+        "class_id": 4,
+        "task_id": "P4OXPNVDCEL7X5336FXS5FUR"
+      },
+      {
+        "year": 2022,
+        "dataset": "Dynamic World",
+        "class": "built",
+        "class_id": 6,
+        "task_id": "43RC2XVY4CV2TIIA2UOPJLSQ"
+      },
+      {
+        "year": 2023,
+        "dataset": "Dynamic World",
+        "class": "water",
+        "class_id": 0,
+        "task_id": "RPLNNZMG72PMB4MQWUIBQ5Z2"
+      },
+      {
+        "year": 2023,
+        "dataset": "Dynamic World",
+        "class": "trees",
+        "class_id": 1,
+        "task_id": "LMDOKEXKWUEGI6UMAL4J5NSF"
+      },
+      {
+        "year": 2023,
+        "dataset": "Dynamic World",
+        "class": "crops",
+        "class_id": 4,
+        "task_id": "TZ5IKJ4Q7QLCR5CDM2XXJI3E"
+      },
+      {
+        "year": 2023,
+        "dataset": "Dynamic World",
+        "class": "built",
+        "class_id": 6,
+        "task_id": "ESAQPVYLXGIK6POIUO2ZCWTM"
+      }
+    ]
+  },
+  "lulc_classes": {
+    "0": "water",
+    "1": "trees",
+    "2": "grass",
+    "3": "flooded_vegetation",
+    "4": "crops",
+    "5": "shrub_and_scrub",
+    "6": "built",
+    "7": "bare",
+    "8": "snow_and_ice"
+  },
+  "class_mapping": {
+    "10": 1,
+    "20": 1,
+    "51": 1,
+    "52": 1,
+    "61": 1,
+    "62": 1,
+    "71": 1,
+    "72": 1,
+    "81": 1,
+    "82": 1,
+    "90": 5,
+    "100": 5,
+    "110": 5,
+    "120": 2,
+    "121": 2,
+    "122": 2,
+    "130": 2,
+    "140": 3,
+    "150": 3,
+    "152": 3,
+    "153": 3,
+    "11": 4,
+    "12": 4,
+    "13": 4,
+    "190": 6,
+    "200": 6,
+    "201": 7,
+    "202": 7,
+    "210": 7,
+    "220": 8,
+    "180": 0
+  },
+  "usage_instructions": {
+    "raster_files": "Load GeoTIFF files in QGIS or upload to GEE as assets",
+    "vector_files": "Shapefiles can be directly opened in QGIS or uploaded to GEE",
+    "qgis": "Layer > Add Layer > Add Raster Layer (for GeoTIFF) or Add Vector Layer (for SHP)",
+    "gee": "Assets > NEW > Upload > Select files from Google Drive"
+  }
+}
