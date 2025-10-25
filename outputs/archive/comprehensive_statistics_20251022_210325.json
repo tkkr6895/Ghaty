@@ -1,0 +1,150 @@
+{
+  "analysis_info": {
+    "analysis_date": "2025-10-22T21:03:25.997231",
+    "study_area_km2": 45733.905564161774,
+    "years_analyzed": [
+      1985,
+      1990,
+      1995,
+      2000,
+      2005,
+      2010,
+      2015,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "temporal_range": "1985-2023",
+    "total_years": 13
+  },
+  "land_cover_statistics": {
+    "Water": {
+      "initial_year": 1985,
+      "final_year": 2023,
+      "initial_area_km2": 0.0,
+      "final_area_km2": 2707.4415984966854,
+      "initial_percent": NaN,
+      "final_percent": 2.516324962575163,
+      "absolute_change_km2": 2707.4415984966854,
+      "percentage_point_change": NaN,
+      "relative_change_percent": 0.0
+    },
+    "Trees": {
+      "initial_year": 1985,
+      "final_year": 2023,
+      "initial_area_km2": 0.0,
+      "final_area_km2": 85517.46787556802,
+      "initial_percent": NaN,
+      "final_percent": 79.4808424569513,
+      "absolute_change_km2": 85517.46787556802,
+      "percentage_point_change": NaN,
+      "relative_change_percent": 0.0
+    },
+    "Grass": {
+      "initial_year": 1985,
+      "final_year": 2023,
+      "initial_area_km2": 0.0,
+      "final_area_km2": 780.0087545104776,
+      "initial_percent": NaN,
+      "final_percent": 0.7249484166497636,
+      "absolute_change_km2": 780.0087545104776,
+      "percentage_point_change": NaN,
+      "relative_change_percent": 0.0
+    },
+    "Flooded vegetation": {
+      "initial_year": 1985,
+      "final_year": 2023,
+      "initial_area_km2": 0.0,
+      "final_area_km2": 870.4509153276059,
+      "initial_percent": NaN,
+      "final_percent": 0.8090063210048355,
+      "absolute_change_km2": 870.4509153276059,
+      "percentage_point_change": NaN,
+      "relative_change_percent": 0.0
+    },
+    "Crops": {
+      "initial_year": 1985,
+      "final_year": 2023,
+      "initial_area_km2": 0.0,
+      "final_area_km2": 4796.6507305501855,
+      "initial_percent": NaN,
+      "final_percent": 4.458058107971632,
+      "absolute_change_km2": 4796.6507305501855,
+      "percentage_point_change": NaN,
+      "relative_change_percent": 0.0
+    },
+    "Shrub and scrub": {
+      "initial_year": 1985,
+      "final_year": 2023,
+      "initial_area_km2": 0.0,
+      "final_area_km2": 9841.054418070891,
+      "initial_percent": NaN,
+      "final_percent": 9.146380444181055,
+      "absolute_change_km2": 9841.054418070891,
+      "percentage_point_change": NaN,
+      "relative_change_percent": 0.0
+    },
+    "Built": {
+      "initial_year": 1985,
+      "final_year": 2023,
+      "initial_area_km2": 0.0,
+      "final_area_km2": 3027.440491329341,
+      "initial_percent": NaN,
+      "final_percent": 2.813735330532252,
+      "absolute_change_km2": 3027.440491329341,
+      "percentage_point_change": NaN,
+      "relative_change_percent": 0.0
+    },
+    "Bare": {
+      "initial_year": 1985,
+      "final_year": 2023,
+      "initial_area_km2": 0.0,
+      "final_area_km2": 51.71550159397979,
+      "initial_percent": NaN,
+      "final_percent": 0.0480649361689957,
+      "absolute_change_km2": 51.71550159397979,
+      "percentage_point_change": NaN,
+      "relative_change_percent": 0.0
+    },
+    "Snow and ice": {
+      "initial_year": 1985,
+      "final_year": 2023,
+      "initial_area_km2": 0.0,
+      "final_area_km2": 2.8394596757407995,
+      "initial_percent": NaN,
+      "final_percent": 0.0026390239650079,
+      "absolute_change_km2": 2.8394596757407995,
+      "percentage_point_change": NaN,
+      "relative_change_percent": 0.0
+    }
+  },
+  "temporal_trends": {
+    "Trees": {
+      "mean_annual_change": 0.5236669228873936,
+      "std_deviation": 0.8590962828585443,
+      "max_increase": 1.7908722335418332,
+      "max_decrease": -0.09718769934978866
+    },
+    "Built": {
+      "mean_annual_change": 0.15020585794479152,
+      "std_deviation": 0.19223856070590162,
+      "max_increase": 0.3737109640143137,
+      "max_decrease": -0.05465539479683468
+    },
+    "Crops": {
+      "mean_annual_change": 0.10843696818785209,
+      "std_deviation": 0.37857582763590075,
+      "max_increase": 0.6067129296660752,
+      "max_decrease": -0.19344178703666737
+    },
+    "Bare": {
+      "mean_annual_change": 0.008343035228063126,
+      "std_deviation": 0.01563304625999468,
+      "max_increase": 0.029920080157799803,
+      "max_decrease": -0.004320054102344303
+    }
+  }
+}

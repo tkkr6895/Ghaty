@@ -1,0 +1,10 @@
+C:\Users\trkumar\OneDrive - Deloitte (O365D)\Documents\Research\Western Ghats\western_ghats_historical_analysis.py:119: UserWarning: Geometry is in a geographic CRS. Results from 'buffer' are likely incorrect. Use 'GeoSeries.to_crs()' to re-project geometries to a projected CRS before this operation.
+
+  gdf_buffered = gdf.buffer(0.0001).buffer(-0.0001)
+C:\Users\trkumar\OneDrive - Deloitte (O365D)\Documents\Research\Western Ghats\western_ghats_historical_analysis.py:120: DeprecationWarning: The 'unary_union' attribute is deprecated, use the 'union_all()' method instead.
+  union_geom = gdf_buffered.unary_union
+Traceback (most recent call last):
+  File "C:\Users\trkumar\OneDrive - Deloitte (O365D)\Documents\Research\Western Ghats\western_ghats_historical_analysis.py", line 390, in <module>
+    display(historical_df[['year', 'Trees', 'Built', 'Crops', 'total_area_km2']].round(1))
+    ^^^^^^^
+NameError: name 'display' is not defined
