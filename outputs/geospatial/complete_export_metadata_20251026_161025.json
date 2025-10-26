@@ -1,0 +1,45 @@
+{
+  "created": "2025-10-26T16:10:25.591308",
+  "years_exported": [
+    1987,
+    1992,
+    1997,
+    2000,
+    2005,
+    2010,
+    2015,
+    2018,
+    2020,
+    2022,
+    2025
+  ],
+  "historical_years": [
+    1987,
+    1992,
+    1997,
+    2000,
+    2005,
+    2010,
+    2015
+  ],
+  "dynamic_world_years": [
+    2018,
+    2020,
+    2022,
+    2025
+  ],
+  "total_tasks": 0,
+  "tasks_by_type": {
+    "full_lulc": 0,
+    "trees_raster": 0,
+    "built_raster": 0,
+    "trees_shapefile": 0,
+    "built_shapefile": 0
+  },
+  "tasks": [],
+  "combined_csv": "outputs\\complete_lulc_1987_2025_20251026_161025.csv",
+  "google_drive_folders": {
+    "rasters": "Western_Ghats_Complete_Analysis",
+    "shapefiles": "Western_Ghats_Shapefiles"
+  }
+}
