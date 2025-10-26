@@ -21,11 +21,10 @@ output_dir = Path("outputs")
 
 # Load combined dataset
 print("\nLoading LULC statistics...")
-combined_csv = output_dir / "glc_fcs30d_combined_lulc_20251024_114642.csv"
+combined_csv = output_dir / "dynamic_world_lulc_january_2018_2025_20251026_153424.csv"
 df = pd.read_csv(combined_csv)
 
-# Remove duplicate 2020 (keep GLC-FCS30D)
-df = df[~((df['year'] == 2020) & (df['dataset'] == 'Dynamic World'))]
+# Data is already clean (Dynamic World only, no duplicates)
 df = df.sort_values('year').reset_index(drop=True)
 
 print(f"Loaded {len(df)} years of data")
@@ -33,17 +32,17 @@ print(f"  Years: {sorted(df['year'].unique().tolist())}")
 print(f"  Datasets: {df['dataset'].unique().tolist()}")
 
 # Calculate statistics
-df['total_computed'] = df[['Water', 'Trees', 'Grass', 'Flooded vegetation', 
-                           'Crops', 'Shrub and scrub', 'Built', 'Bare', 'Snow and ice']].sum(axis=1)
+df['total_computed'] = df[['Water', 'Trees', 'Grass', 'Flooded Vegetation', 
+                           'Crops', 'Shrub and Scrub', 'Built', 'Bare', 'Snow and ice']].sum(axis=1)
 
 area_mean = df['total_computed'].mean()
-trees_1987 = df[df['year'] == 1987]['Trees'].values[0]
-trees_2023 = df[df['year'] == 2023]['Trees'].values[0]
-trees_change = ((trees_2023 - trees_1987) / trees_1987) * 100
+trees_first = df.iloc[0]['Trees']
+trees_last = df.iloc[-1]['Trees']
+trees_change = ((trees_last - trees_first) / trees_first) * 100
 
-built_1987 = df[df['year'] == 1987]['Built'].values[0]
-built_2023 = df[df['year'] == 2023]['Built'].values[0]
-built_change = ((built_2023 - built_1987) / built_1987) * 100
+built_first = df.iloc[0]['Built']
+built_last = df.iloc[-1]['Built']
+built_change = ((built_last - built_first) / built_first) * 100
 
 # LULC Color palette
 LULC_COLORS = {
@@ -293,7 +292,7 @@ html_content = f"""
     <div class="container">
         <div class="header">
             <h1>Western Ghats Land Use Land Cover Analysis</h1>
-            <div class="subtitle">LULC Analysis Dashboard (1987-2023)</div>
+            <div class="subtitle">LULC Analysis Dashboard (2018-2025)</div>
         </div>
         
         <div class="stats-summary">
@@ -304,7 +303,7 @@ html_content = f"""
             </div>
             <div class="stat-card">
                 <div class="stat-label">Study Period</div>
-                <div class="stat-value">1987-2023</div>
+                <div class="stat-value">2018-2025</div>
                 <div class="stat-label">36 Years</div>
             </div>
             <div class="stat-card">
@@ -313,13 +312,13 @@ html_content = f"""
                 <div class="stat-label">km²</div>
             </div>
             <div class="stat-card">
-                <div class="stat-label">Tree Cover (2023)</div>
-                <div class="stat-value">{trees_2023/1000:.1f}K</div>
+                <div class="stat-label">Tree Cover (2025)</div>
+                <div class="stat-value">{trees_last/1000:.1f}K</div>
                 <div class="stat-label">km² ({trees_change:+.1f}%)</div>
             </div>
             <div class="stat-card">
-                <div class="stat-label">Built Area (2023)</div>
-                <div class="stat-value">{built_2023:,.0f}</div>
+                <div class="stat-label">Built Area (2025)</div>
+                <div class="stat-value">{built_last:,.0f}</div>
                 <div class="stat-label">km² ({built_change:+.0f}%)</div>
             </div>
             <div class="stat-card">
@@ -360,10 +359,9 @@ html_content = f"""
             
             <div class="data-source">
                 <strong>Data Sources:</strong><br>
-                GLC-FCS30D (1987-2020): Global Land Cover at 30m resolution, 
-                  <a href="https://samapriya.github.io/awesome-gee-community-datasets/projects/glc30/" target="_blank">More info</a><br>
-                Dynamic World (2018-2023): Near real-time 10m resolution land cover, 
+                Dynamic World V1 (2018-2025): Near real-time 10m resolution land cover,
                   <a href="https://dynamicworld.app/" target="_blank">More info</a><br>
+                Analysis Period: January only (dry season, minimal cloud cover)<br>
                 All data processed via Google Earth Engine<br>
                 Study area: Western Ghats Priority Conservation Area (CEPF Boundary)
             </div>
