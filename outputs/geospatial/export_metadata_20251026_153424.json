@@ -1,0 +1,169 @@
+{
+  "created": "2025-10-26T15:34:24.824396",
+  "years_processed": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "time_period": "January only",
+  "dataset": "Dynamic World V1",
+  "resolution": "30m",
+  "total_tasks": 24,
+  "tasks": [
+    {
+      "year": 2018,
+      "task_id": "Y6DS3OVIM6UBI5RQ4EMYEOVT",
+      "description": "Tree_Cover_2018_January",
+      "type": "tree_cover_raster"
+    },
+    {
+      "year": 2018,
+      "task_id": "N65OBL4XTDDKEUJDMQBRPU5K",
+      "description": "Built_Area_2018_January",
+      "type": "built_area_raster"
+    },
+    {
+      "year": 2018,
+      "task_id": "SMBGAEIJXMCGJCKKKYODK7RP",
+      "description": "LULC_2018_January_DW",
+      "type": "full_lulc_raster"
+    },
+    {
+      "year": 2019,
+      "task_id": "4J7GNCIZB5BF74V5MA33DYBG",
+      "description": "Tree_Cover_2019_January",
+      "type": "tree_cover_raster"
+    },
+    {
+      "year": 2019,
+      "task_id": "U7TCSXZLJT2HQJWXKXPINWNK",
+      "description": "Built_Area_2019_January",
+      "type": "built_area_raster"
+    },
+    {
+      "year": 2019,
+      "task_id": "PKZRPIRMDEROBJDAPJA4H7G4",
+      "description": "LULC_2019_January_DW",
+      "type": "full_lulc_raster"
+    },
+    {
+      "year": 2020,
+      "task_id": "GFZU7FUZKKM2QMWR2UHWSTM5",
+      "description": "Tree_Cover_2020_January",
+      "type": "tree_cover_raster"
+    },
+    {
+      "year": 2020,
+      "task_id": "6FNXSRBZAK4T2JFDH76OAZSP",
+      "description": "Built_Area_2020_January",
+      "type": "built_area_raster"
+    },
+    {
+      "year": 2020,
+      "task_id": "5LGX3BQFXBW627QKNHDNOI77",
+      "description": "LULC_2020_January_DW",
+      "type": "full_lulc_raster"
+    },
+    {
+      "year": 2021,
+      "task_id": "DZXRADWYYY5YQXGERWOWI4OH",
+      "description": "Tree_Cover_2021_January",
+      "type": "tree_cover_raster"
+    },
+    {
+      "year": 2021,
+      "task_id": "S6KAFRGR3X7YLASPL4R5BJ7A",
+      "description": "Built_Area_2021_January",
+      "type": "built_area_raster"
+    },
+    {
+      "year": 2021,
+      "task_id": "LNCAUSLJ74IYW7O4CIHXAELM",
+      "description": "LULC_2021_January_DW",
+      "type": "full_lulc_raster"
+    },
+    {
+      "year": 2022,
+      "task_id": "Q4WOLZVJHWXL3RWHPKT7XWWH",
+      "description": "Tree_Cover_2022_January",
+      "type": "tree_cover_raster"
+    },
+    {
+      "year": 2022,
+      "task_id": "ECSEYJSED4ZYQXFQVEKJ7YAO",
+      "description": "Built_Area_2022_January",
+      "type": "built_area_raster"
+    },
+    {
+      "year": 2022,
+      "task_id": "FRLWOLOOVGAND4P46QPXSG2P",
+      "description": "LULC_2022_January_DW",
+      "type": "full_lulc_raster"
+    },
+    {
+      "year": 2023,
+      "task_id": "XC36TW4DANZD5GJI7WRC2I4Y",
+      "description": "Tree_Cover_2023_January",
+      "type": "tree_cover_raster"
+    },
+    {
+      "year": 2023,
+      "task_id": "N2KYVKTCZ4FWEAFTQIEJKGX5",
+      "description": "Built_Area_2023_January",
+      "type": "built_area_raster"
+    },
+    {
+      "year": 2023,
+      "task_id": "L64ZNJQS573ZLGKADIMWLI7H",
+      "description": "LULC_2023_January_DW",
+      "type": "full_lulc_raster"
+    },
+    {
+      "year": 2024,
+      "task_id": "TJE6LAHSLKJEQJOVMDMXPNUY",
+      "description": "Tree_Cover_2024_January",
+      "type": "tree_cover_raster"
+    },
+    {
+      "year": 2024,
+      "task_id": "HJRV55QFBWJDALT7JUQY5A3M",
+      "description": "Built_Area_2024_January",
+      "type": "built_area_raster"
+    },
+    {
+      "year": 2024,
+      "task_id": "CTMGNBGZ5RSHUXU7MCCZSBVM",
+      "description": "LULC_2024_January_DW",
+      "type": "full_lulc_raster"
+    },
+    {
+      "year": 2025,
+      "task_id": "HS6AWMV5PIORK7PRTXTIJIDY",
+      "description": "Tree_Cover_2025_January",
+      "type": "tree_cover_raster"
+    },
+    {
+      "year": 2025,
+      "task_id": "YL23WHGMPRJM4KE4Y6BJHSCQ",
+      "description": "Built_Area_2025_January",
+      "type": "built_area_raster"
+    },
+    {
+      "year": 2025,
+      "task_id": "NUE2LCAOHMMBBHSZHYYUTJ2K",
+      "description": "LULC_2025_January_DW",
+      "type": "full_lulc_raster"
+    }
+  ],
+  "output_csv": "outputs\\dynamic_world_lulc_january_2018_2025_20251026_153424.csv",
+  "google_drive_folders": {
+    "tree_cover": "Western_Ghats_Tree_Cover",
+    "built_area": "Western_Ghats_Built_Area",
+    "full_lulc": "Western_Ghats_LULC"
+  }
+}
