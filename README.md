@@ -1,10 +1,10 @@
 # Western Ghats Land Use Land Cover (LULC) Analysis
 
-## 🌿 Project Overview
+## Project Overview
 
 Comprehensive analysis of land use and land cover changes in the **Western Ghats biodiversity hotspot** using Google Earth Engine's Dynamic World V1 dataset. This project provides detailed insights into ecosystem changes across **109,486 km²** of critical conservation area.
 
-## 📊 Key Results Summary
+## Key Results Summary
 
 ### Regional Coverage
 - **Total Area Analyzed**: 109,486 km² (98.2% of Western Ghats boundary)
@@ -21,12 +21,12 @@ Comprehensive analysis of land use and land cover changes in the **Western Ghats
 | 2022 | 106,907         | 79.9           | 3,068              | 2.87         |
 | 2024 | 106,689         | 79.1           | 3,449              | 3.23         |
 
-### 🚨 Critical Insights
+### Critical Insights
 - **Built-up Growth**: 61.2% increase from 2018-2024 (+1,309 km²)
 - **Forest Stability**: Tree cover maintained around 79% despite development pressure
 - **Regional Optimization**: Successfully eliminated 75 km² of impossible snow/ice classifications
 
-## **⚠️ Important Classification Note**
+## **Important Classification Note**
 **Dynamic World "Trees" class includes natural forests AND large-scale plantations.** This analysis reports "tree cover" which may include commercial/agricultural plantations and should not be interpreted as natural forest cover per Forest Survey of India definitions. Cross-validation with FSI data recommended for forest-specific analysis.
 
 ## 🛠️ Methodology
@@ -44,7 +44,7 @@ Comprehensive analysis of land use and land cover changes in the **Western Ghats
 - **Regional Corrections**: Eliminated snow/ice false positives through probability band optimization
 - **Spatial Validation**: Verified complete 6-polygon boundary coverage (109,486 km²)
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 ├── data/
@@ -60,10 +60,8 @@ Comprehensive analysis of land use and land cover changes in the **Western Ghats
 └── README.md                                      # This file
 ```
 
-## 🗺️ Spatial Exports
+## Spatial Exports
 
-### Available Downloads
-**Location**: Google Drive → `western_ghats_exports/` folder
 
 | Year | Built-up Areas | Barren/Bare Areas |
 |------|---------------|-------------------|
@@ -81,11 +79,9 @@ Comprehensive analysis of land use and land cover changes in the **Western Ghats
 ## 🔬 Analysis Validation
 
 ### Quality Metrics
-- ✅ **Complete Regional Coverage**: 98.2% average coverage across all years
-- ✅ **Geometric Validation**: All 6 boundary polygons successfully processed
-- ✅ **Temporal Consistency**: Robust analysis methodology across 4 target years
-- ✅ **Regional Accuracy**: Zero snow/ice classifications after optimization
-- ✅ **Progress Transparency**: Real-time logging throughout analysis execution
+- **Complete Regional Coverage**: 98.2% average coverage across all years
+- **Regional Accuracy**: Zero snow/ice classifications after optimization
+- **Progress Transparency**: Real-time logging throughout analysis execution
 
 ### Error Corrections Applied
 - Fixed invalid geometry in polygon 5 (116,683 km² boundary issue)
@@ -93,7 +89,7 @@ Comprehensive analysis of land use and land cover changes in the **Western Ghats
 - Applied regional probability thresholds for Western Ghats ecosystem
 - Implemented ultra-robust processing for large-scale analysis stability
 
-## 🚀 Usage Instructions
+## Usage Instructions
 
 ### Prerequisites
 ```python
@@ -113,7 +109,7 @@ matplotlib           # Visualization
 ### Earth Engine Task Monitoring
 Check Google Earth Engine [Tasks tab](https://code.earthengine.google.com/tasks) for spatial export progress.
 
-## 📈 Conservation Implications
+## Conservation Implications
 
 ### Development Pressure
 - **Rapid Urbanization**: 61% increase in built-up areas over 6 years
@@ -125,7 +121,7 @@ Check Google Earth Engine [Tasks tab](https://code.earthengine.google.com/tasks)
 - **Fragmentation Risk**: Built-up areas concentrated in accessible zones
 - **Conservation Priority**: Monitor development corridors for connectivity
 
-## 🤝 Contributing
+## Contributing
 
 This analysis supports Western Ghats conservation research. For questions, improvements, or collaborations:
 
@@ -134,7 +130,7 @@ This analysis supports Western Ghats conservation research. For questions, impro
 3. Extend analysis with additional years or LULC classes
 4. Integrate with local conservation planning initiatives
 
-## 📚 Data Sources
+## Data Sources
 
 - **Dynamic World V1**: Google Earth Engine global LULC dataset (10m resolution)
 - **CEPF Boundary**: Conservation Biology Institute Western Ghats ecosystem boundary
@@ -171,8 +167,7 @@ This analysis supports Western Ghats conservation research. For questions, impro
 - `outputs/western_ghats_lulc_results.csv` - Area calculations and trends
 - `outputs/lulc_analysis_charts.png` - Visualization summaries
 
-### Spatial Data Exports (NEW!)
-**Google Drive Folders:**
+### Spatial Data Exports 
 - `Western_Ghats_LULC_Export/` - GeoTIFF files for GIS analysis
   - Built-up area masks by year (2018, 2020, 2022, 2024)
   - Barren land masks by year
