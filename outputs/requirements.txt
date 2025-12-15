@@ -1,7 +1,0 @@
-# Western Ghats LULC Analysis Requirements
-earthengine-api>=0.1.370
-geopandas>=0.13.0
-pandas>=1.5.0
-matplotlib>=3.5.0
-numpy>=1.21.0
-shapely>=1.8.0

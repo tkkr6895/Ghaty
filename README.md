@@ -25,14 +25,6 @@ Comprehensive spatial analysis of the Western Ghats biodiversity hotspot examini
 - **Data Source**: Google Earth Engine Dynamic World V1
 - **Resolution**: 10m native, processed at optimized scales
 
-### Major Findings
-
-| Year | Total Area (km²) | Tree Cover (%) | Built-up Area (km²) | Built-up (%) |
-|------|------------------|----------------|---------------------|--------------|
-| 2018 | 108,469         | 77.3           | 2,140              | 1.97         |
-| 2020 | 107,858         | 77.9           | 2,653              | 2.46         |
-| 2022 | 106,907         | 79.9           | 3,068              | 2.87         |
-| 2024 | 106,689         | 79.1           | 3,449              | 3.23         |
 
 ### Critical Insights
 - **Built-up Growth**: 61.2% increase from 2018-2024 (+1,309 km²)
