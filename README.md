@@ -1,8 +1,21 @@
-# Western Ghats Land Use Land Cover (LULC) Analysis
+# Western Ghats Spatial Analysis
 
-## Project Overview
+## About This Project
 
-Comprehensive analysis of land use and land cover changes in the **Western Ghats biodiversity hotspot** using Google Earth Engine's Dynamic World V1 dataset. This project provides detailed insights into ecosystem changes across **109,486 km²** of critical conservation area.
+This repository contains geospatial analysis and research on the Western Ghats biodiversity hotspot, undertaken as a personal project to understand landscape changes, forest ecology, and urbanization patterns across this critical conservation area.
+
+The research explores land use transformations, forest typology, and agricultural pressures across 109,486 km² of the Western Ghats using satellite imagery and geospatial datasets. Analysis and writing from this work are published on my research blog:
+
+**Read the analysis:** [Bettada Jeeva, or the Life of the Hill](https://tkkr.substack.com/p/bettada-jeeva-or-the-life-of-the)
+
+## Project Scope
+
+Comprehensive spatial analysis of the Western Ghats biodiversity hotspot examining:
+- Land use and land cover changes (2018-2024)
+- Forest typology: Old-growth natural forests vs. commercial plantations
+- Urbanization hotspots and built-area expansion
+- Agricultural intensification and water balance impacts
+- District-level trends across six states (Gujarat, Maharashtra, Goa, Karnataka, Kerala, Tamil Nadu)
 
 ## Key Results Summary
 
@@ -121,39 +134,79 @@ Check Google Earth Engine [Tasks tab](https://code.earthengine.google.com/tasks)
 - **Fragmentation Risk**: Built-up areas concentrated in accessible zones
 - **Conservation Priority**: Monitor development corridors for connectivity
 
-## Contributing
+## Personal Research Context
 
-This analysis supports Western Ghats conservation research. For questions, improvements, or collaborations:
+This work represents independent spatial analysis conducted to better understand the ecological and social dynamics of the Western Ghats. The research combines satellite imagery analysis with field observations and published literature to document landscape transformations in this biodiversity hotspot.
 
-1. Review methodology in `western_ghats_analysis_clean.ipynb`
-2. Validate results using provided spatial exports
-3. Extend analysis with additional years or LULC classes
-4. Integrate with local conservation planning initiatives
+Narrative analysis and interpretation of these findings are published on my research blog. The technical methods, data processing scripts, and spatial outputs in this repository support those published articles.
 
 ## Data Sources
 
 - **Dynamic World V1**: Google Earth Engine global LULC dataset (10m resolution)
 - **CEPF Boundary**: Conservation Biology Institute Western Ghats ecosystem boundary
+- **Hansen Global Forest Change**: Tree cover and loss data (2000-2023)
+- **Nature-Trace Natural Forest 2020**: Forest typology classification
+- **Core Stack API**: Agricultural and hydrological indicators (limited coverage)
 - **Processing Platform**: Google Earth Engine cloud computing platform
+
+## Data and API Configuration
+
+This repository uses external APIs and requires credentials:
+
+1. **Google Earth Engine**: Requires authentication and project setup
+2. **Core Stack API**: Copy `config_template.py` to `config.py` and add your API key
+3. See `QUICK_START.md` for detailed setup instructions
+
+Sensitive credentials are excluded from version control via `.gitignore`.
 
 ---
 
-**Analysis Completed**: September 16, 2024  
 **Repository**: https://github.com/tkkr6895/Ghaty  
-**Contact**: Research collaboration welcome for Western Ghats conservation initiatives
+**Research Blog**: https://tkkr.substack.com  
+**Contact**: Personal research project - correspondence welcome via Substack
+
+## Key Analyses
+
+### 1. Land Use Land Cover Change (2018-2024)
+- Comprehensive LULC classification using Dynamic World V1
+- 61% increase in built-up areas
+- Tree cover stability at 79% despite development pressure
+- Outputs: Statistical summaries, spatial exports, change visualizations
+
+### 2. Forest Typology Assessment
+- Classification of old-growth natural forests vs. plantations
+- Nature-Trace 2020 dataset analysis
+- 18,226 km² old-growth (57.5%), 13,458 km² plantations (42.5%)
+- Regional patterns: Southern strongholds vs. coastal conversion
+
+### 3. Urbanization Hotspot Analysis
+- District-level built-area expansion (1987-2025)
+- Top hotspots: Pune (80x growth), Raigarh (99x), Thane (16x)
+- Animated visualizations of urban sprawl
+- 87 districts across six states analyzed
+
+### 4. Agricultural Pressure Assessment
+- Core Stack API integration attempt (limited Western Ghats coverage)
+- Alternative Google Earth Engine methodology developed
+- Focus: Cropping intensity impacts on old-growth forests
+- Analysis pending implementation
 
 ## Repository Structure
 
 ```
-├── data/                          # Input data
-│   └── western_ghats_boundary.*   # Study area shapefiles
-├── outputs/                       # Analysis results
-│   ├── western_ghats_lulc_results.csv
-│   └── western_ghats_lulc_trends.png
-├── methodology/                   # Technical documentation
-│   └── refined_approach.md
-└── western_ghats_analysis_clean.ipynb  # Main analysis notebook
+├── Core Stack Content/             # API reference notebooks and debug tests
+├── data/                           # Boundary shapefiles and metadata
+├── outputs/                        # Analysis results (gitignored)
+│   ├── forest_typology_corrected/
+│   ├── district_analysis/
+│   └── hotspot_animations/
+├── archive/                        # Archived exploratory scripts
+├── config_template.py              # API configuration template
+├── *.py                            # Analysis scripts (see REPOSITORY_STRUCTURE.md)
+└── *.md                            # Documentation and methodology
 ```
+
+See `REPOSITORY_STRUCTURE.md` for detailed file organization.
 
 ## Usage
 
@@ -169,13 +222,9 @@ This analysis supports Western Ghats conservation research. For questions, impro
 
 ### Spatial Data Exports 
 - `Western_Ghats_LULC_Export/` - GeoTIFF files for GIS analysis
-  - Built-up area masks by year (2018, 2020, 2022, 2024)
-  - Barren land masks by year
-  - Probability layers for uncertainty assessment
-  - Full classification layers
+## License
 
-### Map Visualizations (NEW!)
-- `Western_Ghats_Maps/` - Year-on-year change maps
+Analysis code is provided for transparency and reproducibility. Original satellite data and boundary datasets retain their respective licenses. This is a personal research project not affiliated with any institution.
   - RGB change highlights (Red=Built, Green=Barren, Blue=Trees)
   - Full classification maps with Dynamic World colors
   - Ready for import into QGIS/ArcGIS/Web GIS
