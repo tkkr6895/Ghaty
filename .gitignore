@@ -1,60 +1,26 @@
+# Local secrets
+config.py
+.env
+.env.*
+
 # Python
 __pycache__/
 *.py[cod]
-*.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+.pytest_cache/
+.ipynb_checkpoints/
 
-# Virtual Environment
+# Virtual environments
 .venv/
 venv/
-ENV/
-env/
+venv_analysis/
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# VSCode
-.vscode/
-
-# API Keys and Credentials
-config.py
-**/config.py
-*.json
-!corestack_api_spec_v1.json
-**/private-key*.json
-**/service-account*.json
-
-# Data files
-CEPF Content/
+# Generated outputs
 outputs/
-gdrive_exports/
-debug_output/
-Draft Layers/
 
-# OS files
+# Large/derived GIS artifacts (keep sources elsewhere)
+Draft Layers/
+v0 combined layers/
+
+# OS
 .DS_Store
 Thumbs.db
-
-# Temporary files
-*.tmp
-*.swp
-*.swo
-*~
